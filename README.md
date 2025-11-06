@@ -1,9 +1,12 @@
 # 🧪 Saucedemo Login Tests (Java + Selenium + TestNG)
+
 ![Java](https://img.shields.io/badge/Java-17-blue)
 ![Selenium](https://img.shields.io/badge/Selenium-4.25.0-green)
 ![TestNG](https://img.shields.io/badge/TestNG-7.10.2-orange)
 ![Maven](https://img.shields.io/badge/Maven-3.9+-yellow)
 ![Build Passing](https://img.shields.io/badge/Build-Passing-brightgreen)
+
+---
 
 ## 📋 Project Overview
 This project automates the login functionality testing of [SauceDemo](https://www.saucedemo.com/) using **Java 17**, **Selenium WebDriver**, **TestNG**, and **Maven**.
@@ -13,6 +16,7 @@ The framework follows the **Page Object Model (POM)** design pattern to ensure b
 ---
 
 ## 🧱 Project Structure
+
 saucedemo-login-tests/
 ├── pom.xml
 ├── testng.xml
@@ -31,6 +35,8 @@ saucedemo-login-tests/
 │ ├── BaseTest.java
 │ └── LoginTests.java
 └── target/
+---
+
 
 ---
 
@@ -51,15 +57,19 @@ Make sure you have installed:
 - Maven 3.9+
 - Latest version of Google Chrome and Mozilla Firefox
 
+---
+
 ### Steps to Run
-1. Clone the repository:
+
+1. **Clone the repository:**
    ```bash
    git clone https://github.com/Rduaa/saucedemo-login-tests
    cd saucedemo-login-tests
-
+   
+Run tests via Maven:
 mvn clean test
 
-TestNG Configuration
+🧩 TestNG Configuration
 
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
@@ -81,7 +91,8 @@ TestNG Configuration
 
 </suite>
 
-Implemented Test Cases
+
+✅ Implemented Test Cases
 
 UC1: Verify error message when username and password fields are empty.
 
@@ -91,20 +102,19 @@ UC3: Verify successful login with valid credentials.
 
 All test assertions are implemented using AssertJ, and logging is handled with SLF4J.
 
-Example Output
+📊 Example Output
 
 ===============================================
 Saucedemo Login Suite
 Total tests run: 12, Passes: 12, Failures: 0, Skips: 0
 ===============================================
+⚠️ Warnings
 
-Warnings
 WARNING: Unable to find CDP implementation matching 141
-
 This is not an error — it’s a Selenium informational message about Chrome DevTools version mismatch.
 It has no impact on test execution or results.
 
-Author
+👤 Author
 Ruslan Duadze
 📍 Batumi, Georgia
 💬 Telegram: @ruslandua

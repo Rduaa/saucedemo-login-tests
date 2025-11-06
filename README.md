@@ -1,4 +1,9 @@
 # 🧪 Saucedemo Login Tests (Java + Selenium + TestNG)
+![Java](https://img.shields.io/badge/Java-17-blue)
+![Selenium](https://img.shields.io/badge/Selenium-4.25.0-green)
+![TestNG](https://img.shields.io/badge/TestNG-7.10.2-orange)
+![Maven](https://img.shields.io/badge/Maven-3.9+-yellow)
+![Build Passing](https://img.shields.io/badge/Build-Passing-brightgreen)
 
 ## 📋 Project Overview
 This project automates the login functionality testing of [SauceDemo](https://www.saucedemo.com/) using **Java 17**, **Selenium WebDriver**, **TestNG**, and **Maven**.
@@ -105,3 +110,14 @@ Ruslan Duadze
 💬 Telegram: @ruslandua
 
 📧 Email: ruslankavaziduadze@gmail.com
+
+⭐ Check out more projects on [my GitHub profile](https://github.com/Rduaa)
+
+## 📊 Allure Report Integration (Optional)
+
+You can generate beautiful HTML reports with Allure Framework:
+
+```bash
+mvn clean test
+mvn allure:serve
+

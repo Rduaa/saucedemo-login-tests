@@ -49,7 +49,7 @@ Make sure you have installed:
 ### Steps to Run
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/saucedemo-login-tests.git
+   git clone https://github.com/Rduaa/saucedemo-login-tests
    cd saucedemo-login-tests
 
 mvn clean test

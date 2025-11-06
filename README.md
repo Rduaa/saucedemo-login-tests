@@ -113,11 +113,4 @@ Ruslan Duadze
 
 ⭐ Check out more projects on [my GitHub profile](https://github.com/Rduaa)
 
-## 📊 Allure Report Integration (Optional)
-
-You can generate beautiful HTML reports with Allure Framework:
-
-```bash
-mvn clean test
-mvn allure:serve
 

@@ -1,50 +1,47 @@
-## 📝Task description
-Launch URL: https://www.saucedemo.com/
-UC-1 Test Login form with empty credentials:
-Type any credentials into "Username" and "Password" fields.
-Clear the inputs.
-Hit the "Login" button.
-Check the error messages: "Username is required".
-UC-2 Test Login form with credentials by passing Username:
-Type any credentials in username.
-Enter password.
-Clear the "Password" input.
-Hit the "Login" button.
-Check the error messages: "Password is required".
-UC-3 Test Login form with credentials by passing Username & Password:
-Type credentials in username which are under Accepted username are sections.
-Enter password as secret sauce.
-Click on Login and validate the title “Swag Labs” in the dashboard.
-Provide parallel execution, add logging for tests and use Data Provider to parametrize tests. Make sure that all tasks are supported by these 3 conditions: UC-1; UC-2; UC-3.
-
-Please, add task description as README.md into your solution!
-To perform the task use the various of additional options:
-Test Automation tool: Selenium WebDriver;
-Project Builder: Maven;
-Browsers: 1) Firefox; 2) Chrome;
-Locators: CSS;
-Test Runner: TestNG;
-[Optional] Patterns: 1) Singleton; 2) Adapter; 3) Strategy;
-[Optional] Test automation approach: BDD;
-Assertions: AssertJ;
-[Optional] Loggers: SLF4J.
-
----
-
-# 🧪 Saucedemo Login Tests (Java + Selenium + TestNG)
+# 🧪 Saucedemo Login Automation Tests
 
 ![Java](https://img.shields.io/badge/Java-17-blue)
-![Selenium](https://img.shields.io/badge/Selenium-4.25.0-green)
-![TestNG](https://img.shields.io/badge/TestNG-7.10.2-orange)
+![Selenium](https://img.shields.io/badge/Selenium-4-green)
+![TestNG](https://img.shields.io/badge/TestNG-7-orange)
 ![Maven](https://img.shields.io/badge/Maven-3.9+-yellow)
-![Build Passing](https://img.shields.io/badge/Build-Passing-brightgreen)
 
 ---
 
-## 📋 Project Overview
-This project automates the login functionality testing of [SauceDemo](https://www.saucedemo.com/) using **Java 17**, **Selenium WebDriver**, **TestNG**, and **Maven**.
+## 📌 Project Overview
 
-The framework follows the **Page Object Model (POM)** design pattern to ensure better readability, maintainability, and scalability of the test code.
+This project represents an automated UI testing solution for a web-based application login functionality.  
+The framework is implemented using **Java, Selenium WebDriver, TestNG, and Maven** and demonstrates a production-ready approach to UI automation.
+
+The project focuses on:
+- validation of authentication scenarios,
+- reliable browser-based automation,
+- scalable test architecture suitable for regression testing.
+
+The tested application is a public demo system used to simulate real-world authentication flows.
+
+---
+
+## 🎯 Testing Scope
+
+Automated coverage includes the following scenarios:
+
+- Validation of error handling when credentials are missing
+- Authentication flow with partially provided credentials
+- Successful login with valid user credentials
+- Cross-browser verification (Chrome, Firefox)
+- Parallel test execution
+
+---
+
+## 🧱 Architecture & Design
+
+The test framework follows **industry-standard best practices**:
+
+- **Page Object Model (POM)** for maintainability and scalability
+- Centralized **WebDriver management**
+- **Data-driven testing** using TestNG DataProvider
+- **Parallel execution** via TestNG configuration
+- Clear separation between test logic and UI elements
 
 ---
 
@@ -68,9 +65,6 @@ saucedemo-login-tests/
 │ ├── BaseTest.java
 │ └── LoginTests.java
 └── target/
----
-
-
 ---
 
 ## ⚙️ Technologies Used
@@ -149,7 +143,7 @@ It has no impact on test execution or results.
 
 👤 Author
 Ruslan Duadze
-📍 Batumi, Georgia
+
 💬 Telegram: @ruslandua
 
 📧 Email: ruslankavaziduadze@gmail.com
